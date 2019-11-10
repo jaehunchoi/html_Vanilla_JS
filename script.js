@@ -1,8 +1,7 @@
 
-const name = document.querySelector("name");
+const name = document.getElementById("name");
 
 console.log(`name : ${name}`);
-
 //getElementById('name').
 
 
@@ -21,7 +20,9 @@ promise1()
   function(result)
   {
     console.log(result.name);
-    name = result.name;
+    // document.querySelector('#name').value = result.name;
+    name.innerHTML = result.name;
+    
   },function(err)
   {
     console.log(err);
