@@ -2,6 +2,7 @@
 const name1 = document.getElementById("names");
 const ability1 = document.getElementById("abilities");
 const region1 = document.getElementById("regions");
+const sms_name = document.getElementById("sms_name");
 
 document.querySelector('#getProfileButton').addEventListener('click', function () {
   getJsonFromLocalPath(`./test.json`);
@@ -10,7 +11,6 @@ document.querySelector('#getProfileButton').addEventListener('click', function (
 document.querySelector('#getProfileButton2').addEventListener('click', function () {
   getJsonFromLocalPath(`./test2.json`);
 });
-
 
 function getJsonFromLocalPath(path) {
   const promise = function () {
@@ -31,7 +31,8 @@ function getJsonFromLocalPath(path) {
         ability1.innerHTML = result.ability;
         region1.innerHTML = result.region;
 
-        return result;
+
+        sms_name.innerHTML = result.name;
       }, function (err) {
         console.log(err);
       });

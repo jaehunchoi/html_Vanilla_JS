@@ -4,21 +4,45 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>sms.html</title>
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-	<body>
-		<h1>sms.html</h1>
+<body>
+	<h1>sms.html</h1>
 
-    <button id="sms_button">test</button>
-    <table style="width:100%">
-      <tr>
-        <th>이름</th>
-        <th id="sms_name"></ht>
+	<table style="width:100%" border="1px solid black">
+		<tr>
+			<th>이름</th>
+			<th id="sms_a"></th>
+		</tr>
+		<tr>
+			<th>b</th>
+			<th><textarea id="sms_b"></textarea></th>
+		</tr>
+		<tr>
+			<th>c</th>
+			<th><textarea id="sms_c"></textarea></th>
+		</tr>
+		<tr>
+			<th>d</th>
+			<th><textarea id="sms_d"></textarea></th>
+		</tr>
+		<tr>
+			<th>e</th>
+			<th><textarea id="sms_e"></textarea></th>
+		</tr>
 
-      </tr>
+	</table>
+	<!-- <text>sms_name : </text><text id="sms_name">hi</text> -->
 
-    </table>
-    <script src="sms.js"></script>
-	</body>
+	<button id="sms_complete">글쓰기 완료</button>
+  <text id="sms_json">json result</text>
+
+
+	<button id="sms_back" onclick="history.back()">뒤로</button>
+
+  <script src="sms.js" charset="UTF-8"></script>
+</body>
 
 </html>

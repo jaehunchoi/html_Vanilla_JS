@@ -7,30 +7,34 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>글 내용</h1>
+    <h1>모집 내용</h1>
     <h2>
-      <text>팀명: </text><text id="names"></text></br>
-      <text>팀 설명: </text><text id="abilities">run</text></br>
-      <table border="1">
+      <text>팀명: </text><text id="team_name"></text></br>
+      <text>팀 설명: </text><text id="team_content"></text></br>
+      <table border="1" >
         <th>분류</th>
-        <th>만들기</th>
+        <th>지원 인원</th>
+        <th>모집 인원</th>
+        <th>팀원 목록 보기</th>
         <tr><!-- 첫번째 줄 시작 -->
-            <td>첫번째 칸</td>
-            <td>두번째 칸</td>
+            <td><text id="category_1"></text></td>
+            <td><text id="apply_num_1"></text></td>
+            <td><text id="request_num_1"></text></td>
+            <td><a href="./b.html">지원자 목록 보기</a></td>
         </tr><!-- 첫번째 줄 끝 -->
         <tr><!-- 두번째 줄 시작 -->
-            <td>첫번째 칸</td>
-            <td>두번째 칸</td>
+            <td><text id="category_2"></text></td>
+            <td><text id="apply_num_2"></text></td>
+            <td><text id="request_num_2"></text></td>
+            <td><a href="./b.html">지원자 목록 보기</a></td>
         </tr><!-- 두번째 줄 끝 -->
     </table>
       
       </br>
     </h2>
-    <button id="getProfileButton">get profile 1</button></br></br>
-    <button id="getProfileButton2">get profile 2</button></br>
+    <button><a href="./c.html">BACK</a></button>
 
-    <a href="./sms.html">go sms.html</a>
 
-    <script src="script.js"></script>
+    <script src="cjh.js"></script>
   </body>
 </html>

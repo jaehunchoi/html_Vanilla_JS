@@ -1,24 +1,34 @@
-const sms_btn = document.getElementById("sms_button");
-const name = document.getElementById("sms_name");
-let pivot = false;
 
-document.querySelector('#sms_button').addEventListener('click', function () {
-  console.log(`hihi`);
-  if(pivot === false)
-  {
-    sms_btn.innerHTML = "hihi";
-    pivot = true;
-  }
-  else
-  {
-    sms_btn.innerHTML = "byebye";
-    pivot = false;
-  }
+const sms_a = document.getElementById("sms_a");
+const sms_b = document.getElementById("sms_b");
+const sms_c = document.getElementById("sms_c");
+const sms_d = document.getElementById("sms_d");
+const sms_e = document.getElementById("sms_e");
 
-  const result = getJsonFromLocalPath(`./test.json`);
+const sms_json = document.getElementById("sms_json");
 
-  name.innerHTML = result.name;
+getJsonFromLocalPath(`./sms.json`);
+
+document.querySelector('#sms_complete').addEventListener('click', function () {
+//   getJsonFromLocalPath(`./test.json`);
+  console.log(`sms_complete`);
+  const json = JSON.stringify(
+    {a:sms_a.innerHTML,
+    b:sms_b.value,
+    c:sms_c.value,
+    d:sms_d.value,
+    e:sms_e.value}
+    );
+
+    console.log(json);
+
+    sms_json.innerHTML = json;
 });
+
+document.querySelector('#sms_back').addEventListener('click', function () {
+  //;
+});
+
 
 function getJsonFromLocalPath(path) {
   const promise = function () {
@@ -35,11 +45,11 @@ function getJsonFromLocalPath(path) {
       function (result) {
         console.log(result.name);
         // document.querySelector('#name').value = result.name;
-        name1.innerHTML = result.name;
-        ability1.innerHTML = result.ability;
-        region1.innerHTML = result.region;
-
-        return result;
+        sms_a.innerHTML = result.a;
+        sms_b.innerHTML = result.b;
+        sms_c.innerHTML = result.c;
+        sms_d.innerHTML = result.d;
+        sms_e.innerHTML = result.e;
       }, function (err) {
         console.log(err);
       });

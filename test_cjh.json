@@ -1,5 +1,10 @@
 {
-  "team_name": "Choi JH",
-  "team_content": "Coding",
-  "region": "test@gmail.com"
+  "team_name": "테니스",
+  "team_content": "테니스 치러 와요!!",
+  "category__1": "기획자",
+  "category__2": "개발자",
+  "apply_num__1": "2",
+  "apply_num__2": "3",
+  "request_num__1": "5",
+  "request_num__2": "6"
 }
