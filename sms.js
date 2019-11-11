@@ -1,16 +1,24 @@
+const sms_btn = document.getElementById("sms_button");
+const name = document.getElementById("sms_name");
+let pivot = false;
 
-const name1 = document.getElementById("names");
-const ability1 = document.getElementById("abilities");
-const region1 = document.getElementById("regions");
+document.querySelector('#sms_button').addEventListener('click', function () {
+  console.log(`hihi`);
+  if(pivot === false)
+  {
+    sms_btn.innerHTML = "hihi";
+    pivot = true;
+  }
+  else
+  {
+    sms_btn.innerHTML = "byebye";
+    pivot = false;
+  }
 
-document.querySelector('#getProfileButton').addEventListener('click', function () {
-  getJsonFromLocalPath(`./test.json`);
+  const result = getJsonFromLocalPath(`./test.json`);
+
+  name.innerHTML = result.name;
 });
-
-document.querySelector('#getProfileButton2').addEventListener('click', function () {
-  getJsonFromLocalPath(`./test2.json`);
-});
-
 
 function getJsonFromLocalPath(path) {
   const promise = function () {

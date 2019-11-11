@@ -9,7 +9,7 @@ text{
 }
 
 button{
-  background:#1AAB8A;
+  background:rgb(255,90,96);
   color:#fff;
   border:none;
   position:relative;
@@ -19,11 +19,11 @@ button{
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  width:80vmax;
+  width:100vmax;
 }
 button:hover{
   background:#fff;
-  color:#1AAB8A;
+  color:rgb(0,166,153);
 }
 button:before,button:after{
   content:'';
@@ -32,7 +32,7 @@ button:before,button:after{
   right:0;
   height:2px;
   width:0;
-  background: #1AAB8A;
+  background: rgb(0,166,153);
   transition:400ms ease all;
 }
 button:after{
