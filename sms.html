@@ -9,38 +9,44 @@
 </head>
 
 <body>
-	<h1>sms.html</h1>
-
-	<table style="width:100%" border="1px solid black">
+	<h1>PROFILE</h1>
+	<table style="width:100%" class="type07" border="1px solid black">
 		<tr>
-			<th>이름</th>
-			<th id="sms_a"></th>
+			<!-- <th>name</th> -->
+      <th><input id="sms_a" placeholder="name"></input></th>
 		</tr>
 		<tr>
-			<th>b</th>
-			<th><textarea id="sms_b"></textarea></th>
+			<!-- <th>type</th> -->
+			<th><input id="sms_b" placeholder="type"></input></th>
 		</tr>
 		<tr>
-			<th>c</th>
-			<th><textarea id="sms_c"></textarea></th>
+			<!-- <th>region</th> -->
+			<th><input id="sms_c" placeholder="region" width="100%"></input></th>
 		</tr>
 		<tr>
-			<th>d</th>
-			<th><textarea id="sms_d"></textarea></th>
+			<!-- <th>description</th> -->
+			<th><input id="sms_d" placeholder="description"></input></th>
 		</tr>
 		<tr>
-			<th>e</th>
-			<th><textarea id="sms_e"></textarea></th>
+			<!-- <th>img</th> -->
+			<th><img id="sms_e" width="100%" src=""></img></th>
 		</tr>
-
+		<tr>
+			<!-- <th>myteam</th> -->
+			<th><input id="sms_f" placeholder="myteam"></input></th>
+		</tr>
+		<tr>
+			<!-- <th>owned</th> -->
+			<th><input id="sms_g" placeholder="owned"></input></th>
+		</tr>
 	</table>
 	<!-- <text>sms_name : </text><text id="sms_name">hi</text> -->
 
-	<button id="sms_complete">글쓰기 완료</button>
+	<button id="sms_complete">글쓰기 완료 (json 생성)</button>
   <text id="sms_json">json result</text>
 
 
-	<button id="sms_back" onclick="history.back()">뒤로</button>
+	<a href="./index.html"><button>뒤로 (index.html)</button></a>
 
   <script src="sms.js" charset="UTF-8"></script>
 </body>

@@ -1,5 +1,6 @@
 body{
   background: white;
+  font-size: 16px;
 }
 h1{
   color: rgb(255,90,96);
@@ -8,18 +9,26 @@ text{
   color: rgb(0,0,0);
 }
 
+input{
+  font-size: 16px;
+  width: 85vw;
+  background: rgb(255,255,255);
+  border: 0px;
+}
+
 button{
   background:rgb(255,90,96);
   color:#fff;
   border:none;
   position:relative;
-  height:40px;
-  font-size:1.6em;
-  padding:0 2em;
+  font-size:12px;
+  /* padding:0 2em; */
+  /* margin: 1px; */
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  width:100vw;
+  width:100%;
+  height:30px;
 }
 button:hover{
   background:#fff;
@@ -44,4 +53,42 @@ button:after{
 button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+
+
+
+// table design
+table.type07 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 10px;
+}
+
+table.type07 thead {
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    background: #3f1822;
+}
+table.type07 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: rgb(0, 0, 0);
+}
+table.type07 tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: rgb(255,255,255);
+}
+table.type07 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
