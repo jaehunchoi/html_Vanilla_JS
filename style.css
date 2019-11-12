@@ -19,7 +19,7 @@ button{
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  width:100vmax;
+  width:100vw;
 }
 button:hover{
   background:#fff;
